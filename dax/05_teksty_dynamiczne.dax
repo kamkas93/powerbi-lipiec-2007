@@ -1,0 +1,32 @@
+// =====================================================================
+// _Miary / 5. Teksty dynamiczne (prefiks A)
+// Tytuły-wnioski i podtytuły reagujące na wybór kraju / parametru TOP N.
+// =====================================================================
+
+A PodtytulRanking = "Przyrost przychodu netto r/r, €, TOP " & [ParametrTopN Value] & " podkategorii, rok obrotowy 2007/2008"
+
+A TytulRankingKraj =
+    VAR __Top = TOPN(1, VALUES(DimPodkategoria[Nazwa podkategorii]), [$ PrzyrostPrzychodu], DESC)
+    VAR __Nazwa = MAXX(__Top, DimPodkategoria[Nazwa podkategorii])
+    VAR __Wartosc = CALCULATE([$ PrzyrostPrzychodu], __Top)
+    VAR __UdzialRowerow = DIVIDE(CALCULATE([$ PrzyrostPrzychodu], DimKategoria[Nazwa Kategorii] = "Rowery"), [$ PrzyrostPrzychodu])
+    VAR __WartoscTxt = IF(__Wartosc >= 1000000, FORMAT(__Wartosc / 1000000, "0.0") & " mln €", FORMAT(__Wartosc / 1000, "0") & " tys. €")
+    RETURN "Rowery dały " & FORMAT(__UdzialRowerow, "0%") & " wzrostu; najwięcej: " & __Nazwa & " (+" & __WartoscTxt & ")"
+
+A TytulSzczegolyKraju = "Szczegóły: " & SELECTEDVALUE(DimObszarSprzedazy[Kraj], "wybierz kraj")
+
+A TytulSegmentyKraj =
+    VAR __Kraj = SELECTEDVALUE(DimObszarSprzedazy[Kraj], "Wszystkie kraje")
+    RETURN __Kraj & ": " & FORMAT([# KlienciDodatkiBezRoweru], "#,0") & " klientów bez roweru (" & FORMAT([% KlienciTylkoDodatki], "0%") & " wszystkich)"
+
+A TytulTrendKraj =
+    VAR __Kraj = SELECTEDVALUE(DimObszarSprzedazy[Kraj], "Wszystkie kraje")
+    VAR __AC = CALCULATE([$ Przychod], DimData[RokObrotowy] = "2007/2008")
+    VAR __PY = CALCULATE([$ Przychod], DimData[RokObrotowy] = "2006/2007")
+    RETURN __Kraj & ": przychód w 2007/2008 " & FORMAT(__AC / 1000000, "0.0") & " mln € (" & FORMAT(DIVIDE(__AC - __PY, __PY), "+0%;-0%") & " r/r)"
+
+A RekomendacjaKraj =
+    VAR __Kraj = SELECTEDVALUE(DimObszarSprzedazy[Kraj], "Wybrany kraj")
+    RETURN __Kraj & ": " & FORMAT([# KlienciDodatkiBezRoweru], "#,0") & " klientów kupuje tylko dodatki ("
+        & FORMAT([% KlienciTylkoDodatki], "0%") & "). " & FORMAT([% RowerzysciZDodatkami], "0%")
+        & " kupujących rower dokłada do niego dodatki."

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 358" width="760" height="358">
+<rect x="1" y="1" width="758" height="356" rx="8" fill="#FFFFFF" fill-opacity="0.55" stroke="#D6D1E3" stroke-width="2"/>
+<text x="28" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#2B2833">Co możesz zrobić</text>
+<text x="28" y="102" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">Rok obrotowy</tspan> (str. 1): zmienia karty KPI</text>
+<text x="28" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">TOP N</tspan> (str. 2) i <tspan font-weight="600" fill="#2B2833">Liczby / Procenty</tspan> (str. 3)</text>
+<text x="28" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">↓ Drążenie</tspan>: wykres struktury (str. 2), aż do produktu</text>
+<text x="28" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">PPM na kraju → Drill through</tspan>: szczegóły rynku</text>
+<circle cx="38" cy="303" r="10" fill="none" stroke="#4B3F72" stroke-width="2"/><rect x="37" y="302" width="2.4" height="8" fill="#4B3F72"/><circle cx="38.2" cy="298" r="1.5" fill="#4B3F72"/><text x="56" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">Metodologia</tspan>: założenia analizy, w nagłówku stron</text>
+</svg>

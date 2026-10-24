@@ -1,0 +1,61 @@
+// =====================================================================
+// Tabele i kolumny obliczeniowe
+// Projekt: Lipiec 2007 — jak nowa oferta odwróciła spadek sprzedaży
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// Tabela dat (oznaczona jako tabela dat; Auto date/time wyłączone)
+// ---------------------------------------------------------------------
+DimData =
+    -- Zakres: pełne lata kalendarzowe obejmujące daty zamówień (wymóg Time Intelligence)
+    VAR __MinRok = YEAR(MIN('FactInternetSales'[Data zamówienia]))
+    VAR __MaxRok = YEAR(MAX('FactInternetSales'[Data zamówienia]))
+    VAR __MinData = DATE(__MinRok, 1, 1)
+    VAR __MaxData = DATE(__MaxRok, 12, 31)
+    RETURN
+        ADDCOLUMNS(
+            CALENDAR(__MinData, __MaxData),
+            "Rok", YEAR([Date]),
+            "NrMiesiaca", MONTH([Date]),
+            "NazwaMiesiaca", FORMAT([Date], "MMMM"),
+            "Kwartal", "Q" & QUARTER([Date]),
+            "RokMiesiac", FORMAT([Date], "YYYY-MM"),
+            -- Rok obrotowy lipiec–czerwiec, etykieta np. "2007/2008"
+            "RokObrotowy",
+                VAR __Rok = YEAR([Date])
+                VAR __RokStart = IF(MONTH([Date]) >= 7, __Rok, __Rok - 1)
+                RETURN __RokStart & "/" & (__RokStart + 1)
+        )
+
+// ---------------------------------------------------------------------
+// DimKategoria
+// ---------------------------------------------------------------------
+GrupaProduktowa = IF(DimKategoria[Nazwa Kategorii] = "Rowery", "Rowery", "Dodatki")
+
+// ---------------------------------------------------------------------
+// DimKlient
+// ---------------------------------------------------------------------
+Wiek = INT(YEARFRAC(DimKlient[Data urodzenia], DATE(2008, 6, 30)))   -- pełne lata na koniec okna
+
+GrupaWiekowa =
+    SWITCH(TRUE(),
+        DimKlient[Wiek] < 35, "28–34",
+        DimKlient[Wiek] < 45, "35–44",
+        DimKlient[Wiek] < 55, "45–54",
+        DimKlient[Wiek] < 65, "55–64",
+        DimKlient[Wiek] >= 65, "65+",
+        "Brak danych")
+
+GrupaWiekowaSort = SWITCH(TRUE(), DimKlient[Wiek] < 35, 1, DimKlient[Wiek] < 45, 2,
+                          DimKlient[Wiek] < 55, 3, DimKlient[Wiek] < 65, 4, DimKlient[Wiek] >= 65, 5, 99)
+
+// ---------------------------------------------------------------------
+// ParametrTopN (parametr numeryczny 1–10, slicer pokazuje TOP 3/5/8/10)
+// Miara parametru: [ParametrTopN Value]
+// ---------------------------------------------------------------------
+EtykietaTopN = "TOP " & ParametrTopN[ParametrTopN]
+
+// ---------------------------------------------------------------------
+// Power Query (bez DAX): kody `Stan cywilny` (S/M) i `Płeć` (M/F)
+// zamienione na polskie etykiety (Replace values).
+// ---------------------------------------------------------------------

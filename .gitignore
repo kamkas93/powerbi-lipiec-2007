@@ -1,0 +1,5 @@
+_prompt/
+*.pbix
+~$*.pbix
+.DS_Store
+Thumbs.db

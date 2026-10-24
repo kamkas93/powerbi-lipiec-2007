@@ -1,0 +1,38 @@
+// =====================================================================
+// _Miary / 3. Klienci i koszyk
+// Cross-selling bez numeru zamówienia: zbiory klientów (INTERSECT / EXCEPT)
+// zamiast koszyków. Klienci liczeni w tabeli faktów, bo tam dociera filtr
+// (bez CROSSFILTER).
+// =====================================================================
+
+# Klienci = DISTINCTCOUNT(FactInternetSales[Klucz klienta])   -- liczone w fakcie, bo tam dociera filtr
+
+# KlienciRowery = CALCULATE(DISTINCTCOUNT(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] = "Rowery")
+
+# KlienciDodatki = CALCULATE(DISTINCTCOUNT(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] <> "Rowery")
+
+# KlienciRoweryIDodatki =
+    VAR __KlienciRowery = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] = "Rowery")
+    VAR __KlienciDodatki = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] <> "Rowery")
+    RETURN COUNTROWS(INTERSECT(__KlienciDodatki, __KlienciRowery))
+
+// Dwie poniższe miary używają tych samych zmiennych co # KlienciRoweryIDodatki;
+// różnią się tylko operacją na zbiorach w RETURN.
+# KlienciDodatkiBezRoweru =
+    VAR __KlienciRowery = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] = "Rowery")
+    VAR __KlienciDodatki = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] <> "Rowery")
+    RETURN COUNTROWS(EXCEPT(__KlienciDodatki, __KlienciRowery))
+
+# KlienciRoweryBezDodatkow =
+    VAR __KlienciRowery = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] = "Rowery")
+    VAR __KlienciDodatki = CALCULATETABLE(VALUES(FactInternetSales[Klucz klienta]), DimKategoria[Nazwa Kategorii] <> "Rowery")
+    RETURN COUNTROWS(EXCEPT(__KlienciRowery, __KlienciDodatki))
+
+% RowerzysciZDodatkami = DIVIDE([# KlienciRoweryIDodatki], [# KlienciRowery])
+
+% KlienciTylkoDodatki = DIVIDE([# KlienciDodatkiBezRoweru], [# Klienci])
+
+// Testy spójności (rok obrotowy 2007/2008):
+//   949 + 7 677          =  8 626  rowerzystów
+//   8 786 + 7 677        = 16 463  kupujących dodatki
+//   949 + 7 677 + 8 786  = 17 412  klientów

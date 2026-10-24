@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 306" width="760" height="306">
+<rect x="1" y="1" width="758" height="304" rx="8" fill="#FFFFFF" fill-opacity="0.55" stroke="#D6D1E3" stroke-width="2"/>
+<text x="28" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#2B2833">Jak czytać kolory</text>
+<rect x="28" y="85" width="20" height="20" rx="3" fill="#4B3F72"/>
+<text x="92" y="102" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">fiolet</tspan>: bieżący okres</text>
+<rect x="28" y="137" width="20" height="20" rx="3" fill="#B9B3C9"/>
+<text x="92" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">liliowy</tspan>: rok poprzedni, tło porównania</text>
+<rect x="28" y="189" width="20" height="20" rx="3" fill="#E0A43A"/>
+<text x="92" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">bursztyn</tspan>: wyróżnienie, klienci kupujący tylko dodatki</text>
+<rect x="28" y="241" width="20" height="20" rx="3" fill="#2E9E7A"/>
+<rect x="56" y="241" width="20" height="20" rx="3" fill="#C8463D"/>
+<text x="92" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5E5A66"><tspan font-weight="600" fill="#2B2833">zielony / czerwony</tspan>: wzrost / spadek r/r</text>
+</svg>

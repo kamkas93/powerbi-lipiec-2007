@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <!-- Kola -->
+  <circle cx="90" cy="170" r="58" fill="none" stroke="#4B3F72" stroke-width="10"/>
+  <circle cx="310" cy="170" r="58" fill="none" stroke="#4B3F72" stroke-width="10"/>
+  <circle cx="90" cy="170" r="7" fill="#4B3F72"/>
+  <circle cx="310" cy="170" r="7" fill="#4B3F72"/>
+  <!-- Rama -->
+  <path d="M90 170 L190 170 L160 82 Z M160 82 L282 88 L190 170 M282 88 L310 170"
+        fill="none" stroke="#4B3F72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Kierownica -->
+  <path d="M282 88 L272 58 L302 52" fill="none" stroke="#4B3F72" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Siodelko i sztyca (akcent) -->
+  <path d="M160 82 L154 64" fill="none" stroke="#4B3F72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M134 62 L178 62" fill="none" stroke="#E0A43A" stroke-width="12" stroke-linecap="round"/>
+  <!-- Korba i pedal (akcent) -->
+  <circle cx="190" cy="170" r="13" fill="#E0A43A"/>
+  <path d="M190 170 L208 198" fill="none" stroke="#E0A43A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M198 200 L220 200" fill="none" stroke="#E0A43A" stroke-width="8" stroke-linecap="round"/>
+</svg>

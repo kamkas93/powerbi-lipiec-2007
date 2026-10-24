@@ -1,0 +1,20 @@
+// =====================================================================
+// _Miary / 4. Rankingi i udziały
+// =====================================================================
+
+$ PrzyrostTopNPodkategorie =
+    -- przyrost r/r tylko dla N podkategorii o największym przyroście (ALL: ranking względem wszystkich,
+    -- filtry roku i kraju z innych tabel zostają)
+    VAR __N = [ParametrTopN Value]
+    RETURN
+        CALCULATE(
+            [$ PrzyrostPrzychodu],
+            FILTER(
+                DimPodkategoria,
+                RANKX(ALL(DimPodkategoria), [$ PrzyrostPrzychodu]) <= __N
+            )
+        )
+
+# PozycjaKraju = RANKX(ALL(DimObszarSprzedazy[Kraj]), [$ Przychod])
+
+% UdzialKraju = DIVIDE([$ Przychod], CALCULATE([$ Przychod], ALL(DimObszarSprzedazy)))

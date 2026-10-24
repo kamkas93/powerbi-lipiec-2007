@@ -1,0 +1,25 @@
+// =====================================================================
+// _Miary / 6. Grafika SVG (prefiks A)
+// Miary zwracające obraz SVG jako data URI. Kategoria danych: Image URL.
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// A RowerWypelnienie
+// Sylwetka roweru rysowana dwukrotnie (jasna + bursztynowa); bursztynowa
+// przycięta clipPath do szerokości = [% KlienciTylkoDodatki] × 400 px.
+// Wyświetlana w karcie. Na stronie „Szczegóły kraju” dostosowuje się
+// do wybranego kraju (np. Kanada 63%).
+// ---------------------------------------------------------------------
+// [DO UZUPEŁNIENIA: pełny kod miary A RowerWypelnienie z pliku .pbix]
+
+// ---------------------------------------------------------------------
+// A IkonyPlec
+// Piktogram 10 sylwetek (głowa + tors); bursztynowe = udział klientów
+// kupujących tylko dodatki (1 sylwetka = 10%).
+// Technika: GENERATESERIES(0, 9) + CONCATENATEX + translate.
+// Kształt zależny od płci (SELECTEDVALUE).
+// Zastąpiła wcześniejszą wersję (jedna sylwetka wypełniana po wysokości),
+// która przekłamywała proporcje: wypełnienie do połowy wysokości zakrywało
+// ok. 75–80% powierzchni.
+// ---------------------------------------------------------------------
+// [DO UZUPEŁNIENIA: pełny kod miary A IkonyPlec z pliku .pbix]

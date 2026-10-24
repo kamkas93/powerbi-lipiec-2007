@@ -1,0 +1,58 @@
+{
+  "name": "Rowery - Fiolet IBCS v2",
+  "dataColors": [
+    "#4B3F72",
+    "#B9B3C9",
+    "#E0A43A",
+    "#7E6BB0",
+    "#8C8A93",
+    "#D6D1E3",
+    "#2E9E7A",
+    "#C8463D",
+    "#5E5A66",
+    "#A894D6"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#2B2833",
+  "tableAccent": "#4B3F72",
+  "good": "#2E9E7A",
+  "neutral": "#E0A43A",
+  "bad": "#C8463D",
+  "maximum": "#4B3F72",
+  "center": "#B9B3C9",
+  "minimum": "#F1EFF6",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2B2833"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2B2833"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2B2833"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#5E5A66"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#F4F3F7" } },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// =====================================================================
+// _Miary / 1. Sprzedaż
+// Przychód = kwota NETTO (`Wartość sprzedaży`); podatek 8% pominięty.
+// =====================================================================
+
+$ Przychod = SUM(FactInternetSales[Wartość sprzedaży])   -- netto, bez podatku 8%
+
+$ Koszt = SUM(FactInternetSales[Koszt])
+
+$ Zysk = [$ Przychod] - [$ Koszt]
+-- SUMX niepotrzebny: Ilość zawsze = 1, iteracja nic nie wnosi
+
+% MarzaZysku = DIVIDE([$ Zysk], [$ Przychod])
+
+$ PrzychodNaKlienta = DIVIDE([$ Przychod], [# Klienci])

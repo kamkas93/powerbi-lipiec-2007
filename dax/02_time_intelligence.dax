@@ -1,0 +1,23 @@
+// =====================================================================
+// _Miary / 2. Time Intelligence
+// Formaty: zmiany  +0%;-0%;0%
+//          punkty proc.  +0.0" p.p.";-0.0" p.p.";0.0" p.p."
+// =====================================================================
+
+$ PrzychodPY = CALCULATE([$ Przychod], SAMEPERIODLASTYEAR(DimData[Date]))
+
+% ZmianaPrzychodRR = DIVIDE([$ Przychod] - [$ PrzychodPY], [$ PrzychodPY])
+
+$ ZyskPY = CALCULATE([$ Zysk], SAMEPERIODLASTYEAR(DimData[Date]))
+
+% ZmianaZyskRR = DIVIDE([$ Zysk] - [$ ZyskPY], [$ ZyskPY])
+
+% MarzaZyskuPY = CALCULATE([% MarzaZysku], SAMEPERIODLASTYEAR(DimData[Date]))
+
+# ZmianaMarzyPP = ([% MarzaZysku] - [% MarzaZyskuPY]) * 100   -- punkty procentowe
+
+# KlienciPY = CALCULATE([# Klienci], SAMEPERIODLASTYEAR(DimData[Date]))
+
+% ZmianaKlienciRR = DIVIDE([# Klienci] - [# KlienciPY], [# KlienciPY])
+
+$ PrzyrostPrzychodu = [$ Przychod] - [$ PrzychodPY]

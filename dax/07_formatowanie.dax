@@ -1,0 +1,18 @@
+// =====================================================================
+// _Miary / 7. Formatowanie (prefiks C — miary koloru)
+// Używane w formatowaniu warunkowym (Field value).
+// =====================================================================
+
+C KolorZmianaPrzychodRR =   -- analogicznie dla zysku, klientów i marży
+    -- kolor odchylenia r/r wg IBCS: zielony = wzrost, czerwony = spadek, brak dla pustej wartości
+    VAR __Zmiana = [% ZmianaPrzychodRR]
+    RETURN SWITCH(TRUE(), __Zmiana = 0, BLANK(), __Zmiana > 0, "#2E9E7A", __Zmiana < 0, "#C8463D")
+
+// Analogiczne miary koloru dla zysku, klientów i marży
+// (ta sama logika, inna miara zmiany w VAR __Zmiana).
+// [DO UZUPEŁNIENIA: nazwy i kod trzech analogicznych miar C z pliku .pbix]
+
+C KolorTrendMiesiac =
+    -- wyróżnienie punktu zwrotnego: wejście nowej oferty (VII 2007)
+    VAR __Miesiac = SELECTEDVALUE(DimData[RokMiesiac])
+    RETURN SWITCH(TRUE(), __Miesiac = "2007-07", "#E0A43A", __Miesiac > "2007-07", "#4B3F72", "#B9B3C9")
