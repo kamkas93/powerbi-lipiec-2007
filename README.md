@@ -8,7 +8,7 @@ Po roku spadku o ok. 19% firma wprowadziła w lipcu 2007 nową ofertę (rowery t
 
 📄 **Case study na stronie:** https://kamkas93.github.io/kamil-kasinski/projekt-lipiec-2007.html
 
-<!-- ![Strona startowa raportu](img/01_start.png) -->
+![Strona startowa raportu: tytuł, panele „Jak czytać kolory” i „Co możesz zrobić”, duży fioletowy rower jako przycisk wejścia](img/01_start.png)
 
 ## W 30 sekund
 
@@ -22,6 +22,8 @@ Po roku spadku o ok. 19% firma wprowadziła w lipcu 2007 nową ofertę (rowery t
 <!-- ![Interakcje w raporcie](img/g4_przeglad.gif) -->
 
 ## Co jest w środku
+
+![Strona 1. Przełom: karty KPI dla 2007/2008 (16,5 mln €, +186% r/r), trend miesięczny z wyróżnionym lipcem 2007 oraz słupki AC vs PY i klienci vs przychód na klienta](img/02_przelom.png)
 
 | Strona | Tytuł-wniosek | Zawartość |
 |---|---|---|

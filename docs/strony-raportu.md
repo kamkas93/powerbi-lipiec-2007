@@ -4,7 +4,7 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## Start
 
-<!-- ![Strona startowa](../img/01_start.png) -->
+![Start: tytuł raportu, autor, panele „Jak czytać kolory” i „Co możesz zrobić”, rower SVG jako przycisk wejścia](../img/01_start.png)
 
 **Tytuł:** Lipiec 2007: jak nowa oferta odwróciła spadek sprzedaży
 - autor,
@@ -14,7 +14,7 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## 1. Przełom
 
-<!-- ![Strona 1. Przełom](../img/02_przelom.png) -->
+![1. Przełom: rok 2007/2008 wybrany w slicerze, 4 karty KPI z r/r, trend miesięczny z bursztynowym lipcem 2007 i adnotacją o nowej ofercie](../img/02_przelom.png)
 
 **Tytuł:** Lipiec 2007: nowa oferta odwróciła spadek sprzedaży
 **Cel:** pokazać problem (spadek w 2006/2007) i zwrot (wzrost w 2007/2008).
@@ -26,7 +26,7 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## 2. Źródła wzrostu
 
-<!-- ![Strona 2. Źródła wzrostu](../img/03_zrodla_wzrostu.png) -->
+![2. Źródła wzrostu: kraje AC vs PY (USA +282%, Australia +109%), ranking TOP 5 podkategorii wg przyrostu i struktura przychodu do drill-down](../img/03_zrodla_wzrostu.png)
 
 **Tytuł:** Wzrost napędziły rowery i rynek USA
 **Cel:** pokazać, gdzie powstał przyrost (kraje, podkategorie).
@@ -37,8 +37,9 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## 3. Koszyk
 
-<!-- ![Strona 3. Koszyk – widok Liczby](../img/04_koszyk_liczby.png) -->
-<!-- ![Strona 3. Koszyk – widok Procenty](../img/05_koszyk_procenty.png) -->
+![3. Koszyk, widok Liczby: karty 89% / 50% / 949 / 8 786, segmenty 949 / 7 677 / 8 786, kraje wg klientów bez roweru, rekomendacja z rowerem wypełnionym w 50%](../img/04_koszyk_liczby.png)
+
+![3. Koszyk, widok Procenty: te same segmenty jako 5% / 44% / 50%](../img/05_koszyk_procenty.png)
 
 **Tytuł:** Połowa klientów kupuje tylko dodatki
 **Cel:** pokazać cross-selling i grupę docelową rekomendacji.
@@ -49,7 +50,7 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## 4. Klienci
 
-<!-- ![Strona 4. Klienci](../img/06_klienci.png) -->
+![4. Klienci: segmenty wg stanu cywilnego, grupy wiekowej i liczby dzieci (słupki 100%), piktogram płci 49% vs 52% i persona kampanii](../img/06_klienci.png)
 
 **Tytuł:** Bez roweru zostają najmłodsi, najstarsi i duże rodziny
 **Cel:** opisać, do kogo kierować kampanię.
@@ -59,7 +60,7 @@ Każda strona ma tytuł-wniosek (IBCS). Nawigacja: Page navigator w nagłówku k
 
 ## Szczegóły kraju (ukryta, drill-through)
 
-<!-- ![Szczegóły kraju – drill-through](../img/07_szczegoly_kraju.png) -->
+![Szczegóły kraju dla Kanady: KPI, pozycja 6 z 6 rynków, udział 7%, segmenty 3% / 34% / 63%, trend, ranking TOP 5 i rekomendacja z rowerem SVG](../img/07_szczegoly_kraju.png)
 
 **Tytuł:** dynamiczny, „Szczegóły: [kraj]”
 - KPI kraju, pozycja wśród 6 rynków, udział w przychodzie,
@@ -70,7 +71,7 @@ Wszystkie tytuły na tej stronie są dynamiczne.
 
 ## Nota metodologiczna (ukryta)
 
-<!-- ![Nota metodologiczna](../img/08_metodologia.png) -->
+![Nota metodologiczna: lista założeń (kwoty netto, okres, porównania r/r, segmenty, wiek, brak numeru zamówienia, obszar sprzedaży)](../img/08_metodologia.png)
 
 Założenia: netto / 8% / € umowne, okno VII 2005–VI 2008, rok obrotowy, segmenty w 2007/2008, wiek na 30.06.2008, brak numeru zamówienia, obszar sprzedaży. Pełny opis: [metodologia.md](metodologia.md).
 
@@ -91,3 +92,5 @@ Założenia: netto / 8% / € umowne, okno VII 2005–VI 2008, rok obrotowy, seg
 | Nawigacja i przyciski | Page navigator, Metodologia, powrót |
 | IBCS | tytuły-wnioski, AC/PY, kolory odchyleń |
 | Tooltipy | dopracowane albo wyłączone na każdej wizualizacji |
+
+![Przykład tooltipa na wykresie grup wiekowych: grupa 45–54, rower + dodatki 2 179 (46,17%)](../img/09_tooltip.png)

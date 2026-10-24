@@ -1,5 +1,7 @@
 # Katalog DAX
 
+<img src="../img/12_miary.png" alt="Panel Data w Power BI: tabela _Miary z 7 folderami (1. Sprzedaż … 7. Formatowanie) i lista tabel modelu" width="240" align="right">
+
 Wszystkie miary są w tabeli `_Miary`, w 7 folderach. W modelu jest **39 miar** oraz miara parametru `[ParametrTopN Value]`.
 
 **Konwencja nazw** (wymóg uczelni):

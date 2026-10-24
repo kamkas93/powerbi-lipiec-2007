@@ -1,6 +1,8 @@
 # Materiały do dostarczenia przez autora
 
-Ta checklista zbiera wszystko, czego brakuje w repozytorium i na stronie portfolio.
+Ta checklista zbiera wszystko, czego brakuje w repozytorium i na stronie portfolio. ☑ = dostarczone i wstawione, ☐ = otwarte.
+
+**Stan:** zrzuty 01–09, 11 i 12 dostarczone (zmniejszone do szer. 1920 px, paleta 256 kolorów). Otwarte: `10_topn_3_vs_10` (opcjonalny) i GIF-y.
 
 **Jak dodać obrazek:**
 1. Zapisz plik w `img/` pod podaną nazwą.
@@ -13,18 +15,18 @@ Format: PNG, płótno 1920×1080 (eksport strony albo zrzut okna w trybie czytan
 
 | ☐ | Plik | Co ma pokazywać | Gdzie użyty |
 |---|---|---|---|
-| ☐ | `img/01_start.png` | Strona Start: tytuł, panele „Jak czytać kolory” i „Co możesz zrobić”, duży rower | README (baner), strony-raportu, strona www |
-| ☐ | `img/02_przelom.png` | Strona 1. Przełom, rok 2007/2008 wybrany w slicerze; widoczny trend z wyróżnionym VII 2007 | README, strony-raportu, strona www |
-| ☐ | `img/03_zrodla_wzrostu.png` | Strona 2. Źródła wzrostu, ranking ustawiony na TOP 5 | strony-raportu, strona www |
-| ☐ | `img/04_koszyk_liczby.png` | Strona 3. Koszyk, bookmark **Liczby** | strony-raportu, strona www |
-| ☐ | `img/05_koszyk_procenty.png` | Strona 3. Koszyk, bookmark **Procenty** | strony-raportu |
-| ☐ | `img/06_klienci.png` | Strona 4. Klienci: słupki 100%, piktogram płci, persona | strony-raportu, strona www |
-| ☐ | `img/07_szczegoly_kraju.png` | Szczegóły kraju (drill-through), np. Kanada z rowerem SVG 63% | strony-raportu, strona www |
-| ☐ | `img/08_metodologia.png` | Nota metodologiczna | strony-raportu |
-| ☐ | `img/09_tooltip.png` | Przykład dopracowanego tooltipa (dowolna wizualizacja) | strony-raportu |
+| ☑ | `img/01_start.png` | Strona Start: tytuł, panele „Jak czytać kolory” i „Co możesz zrobić”, duży rower | README (baner), strony-raportu, strona www |
+| ☑ | `img/02_przelom.png` | Strona 1. Przełom, rok 2007/2008 wybrany w slicerze; widoczny trend z wyróżnionym VII 2007 | README, strony-raportu, strona www |
+| ☑ | `img/03_zrodla_wzrostu.png` | Strona 2. Źródła wzrostu, ranking ustawiony na TOP 5 | strony-raportu, strona www |
+| ☑ | `img/04_koszyk_liczby.png` | Strona 3. Koszyk, bookmark **Liczby** | strony-raportu, strona www |
+| ☑ | `img/05_koszyk_procenty.png` | Strona 3. Koszyk, bookmark **Procenty** | strony-raportu |
+| ☑ | `img/06_klienci.png` | Strona 4. Klienci: słupki 100%, piktogram płci, persona | strony-raportu, strona www |
+| ☑ | `img/07_szczegoly_kraju.png` | Szczegóły kraju (drill-through), np. Kanada z rowerem SVG 63% | strony-raportu, strona www |
+| ☑ | `img/08_metodologia.png` | Nota metodologiczna | strony-raportu |
+| ☑ | `img/09_tooltip.png` | Przykład dopracowanego tooltipa (dowolna wizualizacja) | strony-raportu |
 | ☐ | `img/10_topn_3_vs_10.png` | Ranking TOP 3 i TOP 10 obok siebie (dynamiczny tytuł i podtytuł) | opcjonalnie |
-| ☐ | `img/11_model.png` | Widok modelu (Model view): płatek śniegu, relacje | model-danych |
-| ☐ | `img/12_miary.png` | Panel danych z tabelą `_Miary` i 7 folderami | opcjonalnie, dax/README |
+| ☑ | `img/11_model.png` | Widok modelu (Model view): płatek śniegu, relacje | model-danych |
+| ☑ | `img/12_miary.png` | Panel danych z tabelą `_Miary` i 7 folderami | opcjonalnie, dax/README |
 
 ## 2. GIF-y
 

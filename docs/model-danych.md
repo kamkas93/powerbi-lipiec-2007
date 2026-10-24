@@ -1,6 +1,6 @@
 # Model danych
 
-<!-- ![Widok modelu w Power BI Desktop](../img/11_model.png) -->
+![Widok modelu w Power BI Desktop: tabela faktów FactInternetSales w środku, wymiary produktu, klienta, geografii, obszaru sprzedaży i dat, tabele _Miary i ParametrTopN, ukryte kolumny techniczne](../img/11_model.png)
 
 ## Schemat
 
