@@ -1,4 +1,6 @@
-# Lipiec 2007: jak nowa oferta odwróciła spadek sprzedaży
+# Analiza Sprzedaży Internetowej
+
+### Lipiec 2007: jak nowa oferta odwróciła spadek sprzedaży
 
 **Raport Power BI** · analiza sprzedaży internetowej VII 2005 – VI 2008 · kwoty netto w €
 
@@ -116,7 +118,7 @@ Nota o danych i prawach: [NOTICE.md](NOTICE.md)
 
 ## English summary
 
-**July 2007: how a new product range reversed a sales decline.** A Power BI report on online sales of a bike shop (sample Microsoft AdventureWorks data, fiscal years July–June, 2005/2006 – 2007/2008, net amounts in a nominal €).
+**Online Sales Analysis — July 2007: how a new product range reversed a sales decline.** A Power BI report on online sales of a bike shop (sample Microsoft AdventureWorks data, fiscal years July–June, 2005/2006 – 2007/2008, net amounts in a nominal €).
 
 - In 2006/2007 revenue fell by about 19% (€7.1M → €5.8M). From July 2007 the company added touring bikes, accessories and clothing. In 2007/2008 revenue grew to €16.5M (+186%).
 - Bikes still generated about 91% of the growth. The USA (+282%) overtook Australia (+109%).
