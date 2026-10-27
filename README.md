@@ -101,13 +101,13 @@ Więcej: [docs/decyzje.md](docs/decyzje.md) · [docs/metodologia.md](docs/metodo
 ## Jak otworzyć
 
 1. Zainstaluj **Power BI Desktop** (Windows, bezpłatny).
-2. Otwórz plik `.pbix`. Raport działa w trybie **Import**, więc dane są w pliku i połączenie z bazą nie jest potrzebne.
+2. Pobierz plik [`Analiza_Sprzedazy_Internetowej.pbix` z wydania v1.0](https://github.com/kamkas93/powerbi-lipiec-2007/releases/tag/v1.0) i otwórz go w Power BI Desktop. Raport działa w trybie **Import**, więc dane są w pliku. Odświeżanie danych jest wyłączone (plik nie zawiera danych logowania do bazy).
 3. Motyw: [theme/Motyw_Rowery_Fiolet_v2.json](theme/Motyw_Rowery_Fiolet_v2.json) (*Widok → Motywy → Przeglądaj w poszukiwaniu motywów*).
 4. Jak czytać raport: [docs/instrukcja-uzytkownika.md](docs/instrukcja-uzytkownika.md).
 
 Raport online: [LINK DO RAPORTU — opcjonalnie]
 
-Plik `.pbix` nie jest wersjonowany w repozytorium (patrz [report/](report/README.md)).
+Plik `.pbix` nie jest wersjonowany w repozytorium, jest dostępny w [Releases](https://github.com/kamkas93/powerbi-lipiec-2007/releases/tag/v1.0) (patrz [report/](report/README.md)).
 
 ## Struktura repozytorium
 

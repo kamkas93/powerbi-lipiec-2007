@@ -10,6 +10,7 @@ Kod DAX, dokumentacja i grafiki w tym repozytorium: © 2026 Kamil Kasiński. Mo�
 - Dane są fikcyjne i nie opisują prawdziwej firmy.
 - Kwoty są pokazane w umownej walucie € (netto).
 - Repozytorium nie zawiera danych źródłowych ani danych dostępowych do bazy.
+- Plik `.pbix` udostępniono w GitHub Releases zgodnie z zasadami kursu.
 
 ## Kontekst
 

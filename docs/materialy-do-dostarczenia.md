@@ -55,7 +55,7 @@ Plik: `img/wideo_lipiec_2007.mp4` albo link do YouTube / LinkedIn.
 
 | ☐ | Plik | Uwagi |
 |---|---|---|
-| ☐ | `report/*.pbix` | `*.pbix` jest w `.gitignore`. Jeśli chcesz udostępnić plik, usuń ten wpis albo dodaj plik do GitHub Releases. |
+| ☑ | `report/*.pbix` | Udostępniony w [GitHub Releases v1.0](https://github.com/kamkas93/powerbi-lipiec-2007/releases/tag/v1.0); `*.pbix` zostaje w `.gitignore`. |
 
 ## 5. Placeholdery `[DO UZUPEŁNIENIA]`
 
