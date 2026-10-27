@@ -2,12 +2,12 @@
 
 Ta checklista zbiera wszystko, czego brakuje w repozytorium i na stronie portfolio. ☑ = dostarczone i wstawione, ☐ = otwarte.
 
-**Stan:** zrzuty 01–09, 11 i 12 dostarczone (zmniejszone do szer. 1920 px, paleta 256 kolorów). Otwarte: `10_topn_3_vs_10` (opcjonalny) i GIF-y.
+**Stan:** zrzuty 01–09, 11 i 12 oraz GIF-y g1–g3 dostarczone i wstawione. Otwarte (opcjonalne): `10_topn_3_vs_10`, `g4_przeglad`, wideo.
 
 **Jak dodać obrazek:**
 1. Zapisz plik w `img/` pod podaną nazwą.
 2. W README / docs usuń komentarz HTML wokół linku do obrazka (`<!-- ... -->`).
-3. Na stronie portfolio: skopiuj ten sam plik do `kamil-kasinski/img/lipiec-2007/` i odkryj sekcję galerii w `projekt-lipiec-2007.html` (usuń atrybut `hidden`).
+3. Na stronie portfolio: skopiuj ten sam plik do `kamil-kasinski/img/lipiec-2007/` z prefiksem `lipiec2007_` (np. `lipiec2007_01_start.png`) i dodaj go w `projekt-lipiec-2007.html`.
 
 Format: PNG, płótno 1920×1080 (eksport strony albo zrzut okna w trybie czytania). GIF: maks. ok. 10 MB, 10–15 fps.
 
@@ -32,9 +32,9 @@ Format: PNG, płótno 1920×1080 (eksport strony albo zrzut okna w trybie czytan
 
 | ☐ | Plik | Scenariusz |
 |---|---|---|
-| ☐ | `img/g1_drilldown.gif` | Strona 2: drill-down Kategoria → Podkategoria → Produkt i powrót w górę |
-| ☐ | `img/g2_liczby_procenty.gif` | Strona 3: przełączenie Liczby → Procenty → Liczby |
-| ☐ | `img/g3_drillthrough.gif` | Strona 2 lub 3: PPM na kraju → Drill through → Szczegóły kraju → przycisk powrotu |
+| ☑ | `img/g1_drilldown.gif` | Strona 2: drill-down Kategoria → Podkategoria → Produkt i powrót w górę |
+| ☑ | `img/g2_liczby_procenty.gif` | Strona 3: przełączenie Liczby → Procenty → Liczby |
+| ☑ | `img/g3_drillthrough.gif` | Strona 2 lub 3: PPM na kraju → Drill through → Szczegóły kraju (bez przycisku powrotu) |
 | ☐ | `img/g4_przeglad.gif` | Opcjonalnie: szybki przegląd Start → 1 → 2 → 3 → 4 przez Page navigator (do README) |
 
 ## 3. Opcjonalne wideo (ok. 2 min)

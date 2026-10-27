@@ -6,7 +6,7 @@
 
 Po roku spadku o ok. 19% firma wprowadziła w lipcu 2007 nową ofertę (rowery turystyczne oraz akcesoria i odzież), a przychód w kolejnym roku obrotowym wzrósł o 186%. Raport pokazuje, skąd wziął się wzrost i do kogo skierować kolejną kampanię.
 
-📄 **Case study na stronie:** https://kamkas93.github.io/kamil-kasinski/projekt-lipiec-2007.html
+📄 **Case study na stronie:** https://kamilkasinski.com/projekt-lipiec-2007.html
 
 ![Strona startowa raportu: tytuł, panele „Jak czytać kolory” i „Co możesz zrobić”, duży fioletowy rower jako przycisk wejścia](img/01_start.png)
 
@@ -19,7 +19,21 @@ Po roku spadku o ok. 19% firma wprowadziła w lipcu 2007 nową ofertę (rowery t
 - **Koszyk (2007/2008):** **89%** rowerzystów dokupuje dodatki, ale **połowa klientów (8 786 osób)** kupuje wyłącznie dodatki.
 - **Rekomendacja:** kampania rowerowa do klientów kupujących tylko dodatki, najpierw w **USA (prawie 4 tys. osób)**, z akcentem na grupy 28–34, 55+ i duże rodziny.
 
+## Interakcje w raporcie
+
 <!-- ![Interakcje w raporcie](img/g4_przeglad.gif) -->
+
+**Drill-down (strona 2. Źródła wzrostu):** wykres struktury przychodu schodzi z kategorii do podkategorii i produktu, a potem wraca w górę.
+
+![Drill-down na stronie 2: wykres struktury przychodu przechodzi z kategorii Rowery do podkategorii i produktów, potem wraca do kategorii](img/g1_drilldown.gif)
+
+**Liczby / Procenty (strona 3. Koszyk):** przełącznik oparty na bookmarkach pokazuje te same segmenty klientów jako liczby osób albo udziały.
+
+![Przełącznik Liczby / Procenty na stronie 3: segmenty klientów zmieniają się z 949 / 7 677 / 8 786 na 5% / 44% / 50% i z powrotem](img/g2_liczby_procenty.gif)
+
+**Drill-through do szczegółów kraju (ze strony 3. Koszyk):** prawy przycisk myszy na USA → Drill through → strona „Szczegóły: USA” z KPI, segmentami, trendem i rekomendacją.
+
+![Drill-through ze strony Koszyk: prawy przycisk na USA otwiera stronę Szczegóły: USA z KPI, segmentami klientów, trendem miesięcznym, rankingiem TOP 5 i rekomendacją z rowerem SVG](img/g3_drillthrough.gif)
 
 ## Co jest w środku
 
@@ -112,7 +126,7 @@ Plik `.pbix` nie jest wersjonowany w repozytorium (patrz [report/](report/README
 - **Dane:** przykładowa baza Microsoft **AdventureWorks** (przetłumaczona wersja udostępniona w ramach kursu). Dane nie dotyczą prawdziwej firmy. Kwoty są pokazane w umownej walucie €.
 - **Kontekst:** projekt zaliczeniowy I semestru studiów podyplomowych z analizy danych (Power BI, 2026).
 - **AI:** projekt był konsultowany z asystentem AI. Model danych, miary i decyzje analityczne wykonałem sam: AI zadawał pytania i robił code review. Gotowe propozycje AI dotyczyły m.in. motywu JSON, miar SVG i części tytułów dynamicznych.
-- **Autor:** Kamil Kasiński · [strona](https://kamkas93.github.io/kamil-kasinski/) · [LinkedIn](https://www.linkedin.com/in/kamil-kasinski-8a7204185) · [GitHub](https://github.com/kamkas93)
+- **Autor:** Kamil Kasiński · [strona](https://kamilkasinski.com/) · [LinkedIn](https://www.linkedin.com/in/kamil-kasinski-8a7204185) · [GitHub](https://github.com/kamkas93)
 
 Nota o danych i prawach: [NOTICE.md](NOTICE.md)
 
